@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-----aqui comienza menu lateral-->
+    <section id="menulateral">
+        <a href="#" clase="menulateral__brand">
+            <i class="bx bxs-smile menulateral__brand"></i>TECNODATA</a>
+            <ul class="menulateral__side-menu">
+                <li class="menulateral-divisor"datatex="OPERACIONES">Operaciones</li>
+                <li><a href="#" class="activate"> <i class="bx bx-dots-horizontal-rounded menulateral_icon"></i>Facturar</a></li>
+                <li><a href="#" class="activate"> <i class="bx bxs-widget menulateral__icon"></i>Comprar</a></li>
+                <li><a href="#" class="activate"><i class="bx bxs-inbox menulateral__icon"></i>Inventario</a></li>
+                <!------Sub menu de navegacion que depende de intentarios---->
+                <ul class="menulateral__side-dropdown">
+                    <li><a href="#">Materia prima</a></li>
+                    <li><a href="#">Producto fabricado</a></li>
+                </ul>
+
+                <li class="menulateral-divisor"data-tex="CATALOGO">Catalogo</li>
+                <!------Sub menu de navegacion que depende de intentarios---->
+                <li><a href="#" class="activate"><i class="bx bxs-inbox menulateral__icon"></i>Tablas Catalogo</a></li>
+                <ul class="menulateral__side-dropdown">
+                    <li><a href="#">Categoria</a></li>
+                    <li><a href="#">Proveedores</a></li>
+                    <li><a href="#">Fabricas</a></li>
+                    <li><a href="#">Sucursales</a></li>
+                </ul>
+                <li><a href="#" class="activate"><i class="bx bxs-chart menulateral__icon"></i>Reportes</a></li>
+                
+            </ul>
+    </section>
+    <!--------aqui termina el menu lateral-------->
+
+<!--aqui comienza la seccion del menu de navegaciones y el contenido principal -->
+    <section id="content">
+        <!---Aqui comienza el menu de navegacion -->
+        <nav>
+            <!--este es el inicio de busqueda-->
+            <form class="nav__form" action="#">
+            <div class="nav__form-group">
+                <input id="SearchInput" class="nav__form-group--input" type="text" placeholder="Buscar........">
+                <i class="bx bx-search nav__form-group--icon"></i>
+            </div>
+            </form>
+            <!--Iconos de notificacion-->
+            <a class="nav__link" href="#"><i class="bx bxs-bell nav__link--icon"></i><span class="nav__link--badge">5</span></a>
+            <a class="nav__link" href="#"><i class="bx bxs-message-square-dots nav__link--icon"></i><span class="nav__link--badge">8</span></a>
+            <!--Foto de perfil-->
+            <span class="nav__divider"></span>
+            <div class="nav__profile">
+                <img src="#" alt="nav__profile-img">
+                <ul class="nav__profile-link">
+                    <li><a href="#"><i class="bx bxs-user-circle nav__link--icon"></i>Perfil</a></li>
+                    <li><a href="#"><i class="bx bxs-cog  nav__link--icon"></i>Configuracion</a></li>
+                    <li><a href="#"><i class="bx bxs-log-out-circle nav__link--icon"></i>Cerrar Sesion</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--Aqui termins el menu de navegacion-->
+        <main>
+        <h1 class="main__title">Panel de control</h1>
+        <ul class="main__migas">
+            <li> <a href="#"></a></li>
+            <li class="divider"></li>
+            <li> <a href="#" class="activate">Bienvenido</a></li>
+        </ul>
+
+        <div class="main__data">
+            <div class="data__content-data">
+                <h3>Demostracion de consumo de API</h3>
+                <p>Esta tabla consume: http://fakestoreapi.com/products para optener los datos que se van a indexar a la tabla</p>
+                <div class="main__divTable">
+                    <div class="main__div-header">
+                        <button onclick="openModel()" main__nuevo-registro>Registrar</button>
+                    </div>
+                    <table class="main__divTable-Table">
+                        <thead class="main__divTable-table-thead">
+                            <tr>ID</tr>
+                            <tr>Nombre del producto</tr>
+                            <tr>Precio</tr>
+                            <tr>Categoria</tr>
+                            <tr>Acciones</tr>
+                        </thead>
+                        <tbody id="productTableBody">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        </main>
+    </section>
+    <!--aqui termina el menu de navegacion y el contenido principal-->
+</body>
+</html>
